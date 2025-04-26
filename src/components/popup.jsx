@@ -3,7 +3,6 @@
 import './about.css' ;
 
 
-
 export default function PopupWindow() {
     const [isOpen, setIsOpen] = useState(false);
   
@@ -32,13 +31,12 @@ export default function PopupWindow() {
                 </svg>
               </button>
               
-              <h2 className="popup-title"></h2>
+              <h2 className="popup-title"> you can find me in </h2>
               <p className="popup-content">
               <div className="social-links">
-                        <a href="#"><i className="fab fa-linkedin"></i></a>
-                        <a href="#"><i className="fab fa-github"></i></a>
-                        <a href="#"><i className="fab fa-twitter"></i></a>
-                        <a href="#"><i className="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/moaz-ahmed-12b1a831b/" target='_blank'><i className="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/mo3az-web" target='_blank'><i className="fab fa-github"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B201080357224&text&type=phone_number&app_absent=0" target='_blank'><i className="fab fa-whatsapp"></i></a>
                     </div>
               </p>
             </div>

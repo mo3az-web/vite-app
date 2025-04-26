@@ -1,5 +1,11 @@
 /* SkillsSection.css */
-
+:root {
+  --primary: #3a86ff;
+  --secondary: #8338ec;
+  --dark: #2b2d42;
+  --light: #f8f9fa;
+  --transition: all 0.3s ease;
+}
 .skills-section {
     padding: 64px 0;
     background: linear-gradient(135deg, #1a202c, #2d3748);
@@ -12,7 +18,8 @@
     padding: 0 16px;
   }
   
-  .section-title {
+  .section-title {  
+    color: var(--primary);
     font-size: 36px;
     font-weight: 700;
     text-align: center;

@@ -79,18 +79,28 @@ nav ul li a:hover {
 }
 
 .profile-container {
-    position: relative;
-    width: 350px;
-    height: 350px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  perspective: 1000px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
 }
 
 .profile-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  display: block;
+}
+.profile-container:hover .profile-photo  {
+  transform: rotateY(5deg) rotateX(30deg) scale(1.05);
+  box-shadow: 20px 25px 40px rgba(0, 0, 0, 0.2);;
+  transition: all 0.5s ease;
+}
+
+.profile-container:hover .profile-photo::after {
+  opacity: 1;
 }
 
 h1 {
@@ -104,7 +114,7 @@ h2 {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 30px;
-    color: #3498db;
+    color: #8338ec;
 }
 
 p {
@@ -115,7 +125,7 @@ p {
 
 .cta-button {
     display: inline-block;
-    background-color: #3498db;
+    background-color: #8338ec;
     color: #fff;
     padding: 12px 30px;
     border-radius: 30px;
@@ -126,23 +136,25 @@ p {
 }
 
 .cta-button:hover {
-    background-color: #2980b9;
+    background-color:  black;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
 
 .secondary-button {
     display: inline-block;
     background-color: transparent;
-    color: #3498db;
+    color:  #8338ec;
     padding: 12px 30px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
-    border: 2px solid #3498db;
+    border: 2px solid #8338ec;
     transition: all 0.3s;
 }
 
 .secondary-button:hover {
-    background-color: #3498db;
+    background-color:  black;
     color: #fff;
 }
 
@@ -159,7 +171,7 @@ p {
 }
 
 .social-links a:hover {
-    color: #3498db;
+    color: #8338ec;
 }
 
 @media (max-width: 768px) {
@@ -200,7 +212,7 @@ p {
   
   /* Button to open the popup */
   .open-button {
-    background-color: #3b82f6;
+    background-color: #8338ec;
     color: white;
     font-weight: 500;
     padding: 8px 16px;
@@ -222,6 +234,7 @@ p {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -266,7 +279,7 @@ p {
   
   /* Popup content styling */
   .popup-content {
-    color: #4b5563;
+    color: #8338ec; 
     margin-bottom: 16px;
     line-height: 1.5;
   }
@@ -279,36 +292,9 @@ p {
   }
   
   /* Cancel button styling */
-  .cancel-button {
-    background-color: #e5e7eb;
-    color: #1f2937;
-    font-weight: 500;
-    padding: 8px 16px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+
   
-  .cancel-button:hover {
-    background-color: #d1d5db;
-  }
   
-  /* Confirm button styling */
-  .confirm-button {
-    background-color: #3b82f6;
-    color: white;
-    font-weight: 500;
-    padding: 8px 16px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .confirm-button:hover {
-    background-color: #2563eb;
-  }
   
   /* Responsive adjustments for small screens */
   @media (max-width: 640px) {
