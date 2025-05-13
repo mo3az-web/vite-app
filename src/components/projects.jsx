@@ -18,9 +18,9 @@ const ProjectSection = () => {
       title: 'Rafeeq',
       description: 'coming soon stay tuned :)',
       image: '/api/placeholder/400/300',
-      tags: ['NA', ],
-      link: 'https://example.com/project3',
-      code: ''
+      tags:  ['React', 'CSS', 'JavaScript'],
+      link: 'https://plumbing-project2.vercel.app/plumbing-project/',
+      code: 'https://github.com/mo3az-web/vite-app'
     }
   ]);
 
@@ -52,10 +52,10 @@ const ProjectSection = () => {
                   ))}
                 </div>
                 
-                <a href={project.link} className="cta-button" target="_blank" rel="noopener noreferrer">
+                <a href={project.link} className="links-button" target="_blank" rel="noopener noreferrer">
                   View Project
                 </a>
-                <a href={project.code} className="cta-button" target="_blank" rel="noopener noreferrer">
+                <a href={project.code} className="links-button" target="_blank" rel="noopener noreferrer">
                   View code
                 </a>
               </div>

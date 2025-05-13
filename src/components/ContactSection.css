@@ -188,8 +188,8 @@
   @media screen and (max-width: 992px) {
     .contact-info,
     .contact-form {
-      flex: 0 0 100%;
-      max-width: 100%;
+      flex: 100%;
+      max-width: 120%;
     }
     
     .contact-info {

@@ -18,7 +18,7 @@ function About (){
                 <div className="hero-content">
                     <h1>Hello, I'm Moaz</h1>
                     <h2> web devoloper</h2>
-                    <p>Welcome to my portfolio! I'm a passionate web devoloper with expertise in frontend, I specialize in . I'm dedicated to delivering high-quality work and constantly expanding my knowledge and skills.</p>
+                    <p>Welcome to my portfolio! I'm a passionate web devoloper with expertise in frontend. I'm dedicated to delivering high-quality work and constantly expanding my knowledge and skills.</p>
                    <h2> if you wanna know more about me and get to my social media click the button below </h2>
                     <PopupWindow></PopupWindow>
                    

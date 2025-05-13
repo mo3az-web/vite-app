@@ -177,9 +177,5 @@ body {
       border-bottom: 2px solid rgba(255, 255, 255, 0.05);
     }
     
-    .navbar-links li a:hover {
-      background-color: rgba(58, 134, 255, 0.1);
-      
-    }
   }
 }
