@@ -9,7 +9,7 @@ const ProjectSection = () => {
       id: 1,
       title: 'tic tac toe game',
       description: 'tic tac toe game made with react js responsive in poth phone and desktop.',
-      image: '/src/assets/tictactoe.jpg',
+      image: './src/assets/tictactoe.jpg',
       tags: ['React', 'CSS', 'JavaScript'],
       link: 'https://tik-tak-toe-game-pzmr.vercel.app/',
       code: 'https://github.com/mo3az-web/tik-tak-toe__game'
