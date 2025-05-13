@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; import myProfile from '/src/assets/portfoliopic.jpg';
 import './about.css' ;
- import myProfile from '/src/assets/portfoliopic.jpg';
+
 import PopupWindow from './popup';
 function About (){
 

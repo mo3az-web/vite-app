@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './projects.css'; // We'll define this CSS file below
-import myProfile from '/src/assets/portfoliopic.jpg';
+
+ 
 const ProjectSection = () => {
   // Sample project data - you would replace this with your actual projects
   const [projects, setProjects] = useState([
@@ -8,15 +9,15 @@ const ProjectSection = () => {
       id: 1,
       title: 'tic tac toe game',
       description: 'tic tac toe game made with react js responsive in poth phone and desktop.',
-      image: './src/assets/tictactoe.jpg',
+      image: '/src/assets/tictactoe.jpg',
       tags: ['React', 'CSS', 'JavaScript'],
       link: 'https://tik-tak-toe-game-pzmr.vercel.app/',
       code: 'https://github.com/mo3az-web/tik-tak-toe__game'
     },
     {
       id: 2,
-      title: 'Rafeeq',
-      description: 'coming soon stay tuned :)',
+      title: 'ateo alrasheedey plumbing',
+      description: 'an app built for an orgnidation in saudi arabia called aetaoy alrasheed for plumbing',
       image: '/api/placeholder/400/300',
       tags:  ['React', 'CSS', 'JavaScript'],
       link: 'https://plumbing-project2.vercel.app/plumbing-project/',
